@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Blackjack</string>
+    <string name="play_text">Play</string>
+    <string name="instruction_text">Instructions</string>
+    <string name="title_text">Blackjack</string>
+    <string name="rules_text">Rules</string>
+    <string name="menu_text">Menu</string>
+    <string name="instructions">Aces may be counted as 1 or 11 points and tens and face cards count as ten points. The value of a hand is the sum of the point values of the individual cards. Except, a "blackjack" is the highest hand, consisting of an ace and any 10-point card, and it outranks all other 21-point hands. After the players have bet, the dealer will give two cards to each player and two cards to himself. One of the dealer cards is dealt face up. The facedown card is called the "hole card."
+        \n\nThe following are the choices available to the player:
+        \n\nStand: Player stands pat with his cards.
+        \n\nHit: Player draws another card (and more if he wishes).
+        \n\nIf this card causes the player\'s total points to exceed 21 (known as "breaking" or "busting") then he loses. After each player has had his turn, the dealer will turn over his hole card. If the dealer has 16 or less, then he will draw another card. A special situation is when the dealer has an ace and any number of cards totaling six points (known as a "soft 17"). At some tables, the dealer will also hit a soft 17. If the dealer goes over 21 points, then any player who didn\'t already bust will win. If the dealer does not bust, then the higher point total between the player and dealer will win.</string>
+    <string-array name="bet_amount">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="menu">
+        <item>Deal</item>
+        <item>Stand</item>
+        <item>Hit</item>
+        <item>Cash Out</item>
+    </string-array>
+</resources>

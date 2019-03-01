@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feltGreen"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_rounded"
+        android:drawableRight="@drawable/ic_menu"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="54sp"
+        android:paddingRight="54sp"
+        android:text="@string/menu_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/chip"
+        android:layout_width="106dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chipborder" />
+
+    <TextView
+        android:id="@+id/chiptotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif-light"
+        android:text="$5000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/ghostWhite"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/chip"
+        app:layout_constraintEnd_toEndOf="@+id/chip" />
+
+    <TextView
+        android:id="@+id/dealer_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/score_rounded"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/ghostWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dealer_hand"
+        app:layout_constraintEnd_toEndOf="@+id/dealer_hand" />
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/score_rounded"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/ghostWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/player_hand"
+        app:layout_constraintEnd_toEndOf="@+id/player_hand" />
+
+    <TextView
+        android:id="@+id/dealer_hand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_hand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dealer_hand" />
+
+    <TextView
+        android:id="@+id/dealer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/score_rounded"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="12sp"
+        android:paddingRight="12sp"
+        android:text="Dealer's Hand:"
+        android:textColor="@color/ghostWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dealer_hand"
+        app:layout_constraintStart_toStartOf="@+id/dealer_hand" />
+
+    <TextView
+        android:id="@+id/player_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/score_rounded"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="12sp"
+        android:paddingRight="12sp"
+        android:text="Your Hand:"
+        android:textColor="@color/ghostWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/player_hand"
+        app:layout_constraintStart_toStartOf="@+id/player_hand" />
+</android.support.constraint.ConstraintLayout>
